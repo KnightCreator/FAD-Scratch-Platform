@@ -3,10 +3,22 @@
   <head>
     <title>FAD Scratch Platform</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https:unpkg.com/blockly/blockly.min.js"></script>
   </head>
   <body>
     <h1>Welcome to FAD Scratch Platform</h1>
-    <p>Build and test FAD scripts here!</p>
+    <!-- Blockly Workspace -->
+    <div id="blocklyDiv" style="height: 480px; width: 600px;></div>
+    <-- Blockly Toolbox -->
+    <xml  id="toolbox" style="display: none">
+      <block type="controls_if"></block>
+      <block type="logic_compare"></block>
+      <block type="math_number"></block>
+      <block type="math_arithmetic"></block>
+      <block type="text"></block>
+      <block type="text_print"></block>
+    </xml>
+    
     <script src="app.js"></script>
   </body>
 </html>
